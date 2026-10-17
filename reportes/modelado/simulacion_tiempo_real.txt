@@ -11,8 +11,8 @@ Precisión de las alertas: 35%
 Monto defraudado detectado: 8,464.27 de 10,837.54 EUR
 
 Latencia por transacción individual (300 llamadas a evaluar()):
-  p50 = 37.9 ms · p95 = 43.9 ms · máx = 103.5 ms
-Latencia por micro-lote de 1 minuto: mediana 25 ms
+  p50 = 23.8 ms · p95 = 35.2 ms · máx = 90.0 ms
+Latencia por micro-lote de 1 minuto: mediana 24 ms
 
 Archivos: reportes/modelado/simulacion_alertas.csv (cada alerta con motivos),
           visualizaciones/ml_06_simulacion_tiempo_real.png

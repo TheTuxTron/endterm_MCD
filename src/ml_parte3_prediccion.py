@@ -1,8 +1,7 @@
 """
 Modelado - Parte 3: Predicción de fraude en operaciones futuras.
 
-Enunciado original: predecir ventas futuras. Adaptación: predecir si las
-transacciones FUTURAS son fraudulentas, que es lo que hace un detector en
+Predecir si las transacciones FUTURAS son fraudulentas, que es lo que hace un detector en
 producción.
 
 1. Variables nuevas: hora cíclica, franja de madrugada, log del monto y

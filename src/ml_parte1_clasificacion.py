@@ -1,12 +1,11 @@
 """
 Modelado - Parte 1: Clasificación de transacciones.
 
-Enunciado original: "Clientes Normales" vs "Clientes Premium".
-Adaptación: "Transacción Normal" vs "Transacción Fraudulenta".
+"Transacción Normal" vs "Transacción Fraudulenta".
 
 Se comparan tres clasificadores de scikit-learn (más un clasificador trivial
 como línea base) con validación cruzada estratificada sobre el conjunto de
-entrenamiento. Las predicciones fuera de pliegue (OOF) se guardan para que la
+entrenamiento. Las predicciones fuera de pliegue se guardan para que la
 Parte 3 elija los umbrales de decisión sin tocar el conjunto de prueba.
 """
 from __future__ import annotations

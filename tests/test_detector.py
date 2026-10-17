@@ -1,6 +1,4 @@
 """Pruebas automáticas del detector de fraude.
-
-Ejecutar desde la raíz del proyecto (después de `python main.py`):
     python -m pytest -v
 """
 import sys

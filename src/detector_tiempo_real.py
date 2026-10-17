@@ -7,11 +7,6 @@ transacción que llega, devuelve:
     decisión  APROBAR / REVISAR / BLOQUEAR según la política de la Parte 3
     motivos   qué variables se alejan de una operación normal
     latencia  tiempo de respuesta en milisegundos
-
-Uso:
-    python src/detector_tiempo_real.py --casos                  # casos de prueba
-    python src/detector_tiempo_real.py --simular                # repetición del período de prueba
-    python src/detector_tiempo_real.py --simular --velocidad 600 # 1 h simulada = 6 s
 """
 from __future__ import annotations
 

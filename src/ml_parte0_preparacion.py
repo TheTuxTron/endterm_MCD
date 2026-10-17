@@ -5,12 +5,6 @@ La limpieza y el EDA completos están en parte1/2/3. Aquí se carga la tabla lim
 en pandas, se verifica que está lista para modelar y se completa el EDA con la
 vista temporal que necesita el modelado (tendencia en el tiempo, picos y
 dónde cae el corte entrenamiento/prueba).
-
-Equivalencias con el enunciado de Online Retail II:
-    pedidos cancelados / sin cliente -> duplicados, nulos y fuera de dominio (parte1)
-    cantidad y precio de productos   -> monto de la operación
-    productos más vendidos           -> rangos de monto más frecuentes y más defraudados
-    patrones estacionales            -> ciclo horario y picos de actividad
 """
 from __future__ import annotations
 
@@ -118,12 +112,6 @@ Tabla `{C.TABLA_TRANSACCIONES}` de {C.DB_PATH.name} -> DataFrame de {df.shape[0]
 ------------------------------------------------------------------
 {chr(10).join(checks)}
 
-Equivalencias con el enunciado original (Online Retail II):
-* "Transacciones sin ID de cliente / pedidos canceladas" -> aquí no hay cliente
-  ni cancelaciones; los registros irrelevantes son los duplicados exactos
-  (1,081 eliminados) y los fuera de dominio (0).
-* No hay valores faltantes que imputar.
-
 3. Variables clave
 ------------------
 * monto: mediana {df.monto.median():.2f} EUR, media {df.monto.mean():.2f} EUR, máximo
@@ -131,7 +119,7 @@ Equivalencias con el enunciado original (Online Retail II):
 * hora: ciclo de 24 h derivado de tiempo_seg.
 * V1..V28: atributos de comportamiento anonimizados (PCA).
 
-4. "Productos más vendidos" -> rangos de monto
+4. Rangos de monto
 ---------------------------------------------
 {rangos.to_string()}
 

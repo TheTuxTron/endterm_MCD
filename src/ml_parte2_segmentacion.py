@@ -1,9 +1,7 @@
 """
 Modelado - Parte 2: Segmentación con K-means y Mean Shift.
 
-Enunciado original: segmentar CLIENTES. Este set no tiene identificador de
-cliente ni de cuenta, así que se segmentan TRANSACCIONES en perfiles de
-comportamiento. Después se mide cuánto fraude cae en cada perfil. El
+Se segmentan TRANSACCIONES en perfiles de comportamiento. Después se mide cuánto fraude cae en cada perfil. El
 agrupamiento NO usa la etiqueta: si un segmento resulta casi todo fraude, el
 patrón se encontró sin supervisión.
 
@@ -251,8 +249,7 @@ def main() -> None:
     texto = f"""MODELADO - PARTE 2: SEGMENTACIÓN DE TRANSACCIONES
 {'=' * 70}
 
-Adaptación: el enunciado pide segmentar clientes, pero este set no tiene
-identificador de cliente ni de cuenta. Se segmentan TRANSACCIONES en perfiles
+Se segmentan TRANSACCIONES en perfiles
 de comportamiento y luego se mide el fraude en cada perfil (la etiqueta no
 participa en el agrupamiento).
 

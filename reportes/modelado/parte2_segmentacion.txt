@@ -1,8 +1,7 @@
 MODELADO - PARTE 2: SEGMENTACIÓN DE TRANSACCIONES
 ======================================================================
 
-Adaptación: el enunciado pide segmentar clientes, pero este set no tiene
-identificador de cliente ni de cuenta. Se segmentan TRANSACCIONES en perfiles
+Se segmentan TRANSACCIONES en perfiles
 de comportamiento y luego se mide el fraude en cada perfil (la etiqueta no
 participa en el agrupamiento).
 
@@ -68,8 +67,8 @@ Descripción:
 3. Comparación
 --------------
            n_segmentos                  parametro silhouette davies_bouldin pct_mayor_segmento pct_fraude_en_segmentos_10x segundos_ajuste
-K-means              4   k elegido por silhouette   0.142019         1.7858          50.217816                   52.642706         0.18738
-Mean Shift          42  bandwidth 3.13 (estimado)   0.174972       1.335225          95.692675                   81.818182        9.977504
+K-means              4   k elegido por silhouette   0.142019         1.7858          50.217816                   52.642706        0.254748
+Mean Shift          42  bandwidth 3.13 (estimado)   0.174972       1.335225          95.692675                   81.818182       12.484572
 
 Coincidencia entre ambas particiones (Adjusted Rand Index): 0.022
 
@@ -91,7 +90,7 @@ Lectura:
   K-means sirve para PERFILAR (pocos segmentos, descriptibles y accionables).
   Mean Shift sirve para SEPARAR LO ATÍPICO sin fijar k, pero depende mucho del
   bandwidth y escala peor: es O(n²), por eso se ajustó con 10,000
-  operaciones (10.0 s) frente a 20,000 de K-means (0.2 s).
+  operaciones (12.5 s) frente a 20,000 de K-means (0.3 s).
 * Uso práctico: el segmento puede servir como regla de priorización o como
   variable adicional del modelo supervisado. No reemplaza al clasificador:
   con K-means, el 47% de los fraudes queda en segmentos de riesgo bajo.

@@ -14,12 +14,6 @@ Tabla `transacciones` de transacciones.db -> DataFrame de 283,726 filas
 [OK] Montos no negativos
 [OK] Orden cronológico
 
-Equivalencias con el enunciado original (Online Retail II):
-* "Transacciones sin ID de cliente / pedidos canceladas" -> aquí no hay cliente
-  ni cancelaciones; los registros irrelevantes son los duplicados exactos
-  (1,081 eliminados) y los fuera de dominio (0).
-* No hay valores faltantes que imputar.
-
 3. Variables clave
 ------------------
 * monto: mediana 22.00 EUR, media 88.47 EUR, máximo
@@ -27,7 +21,7 @@ Equivalencias con el enunciado original (Online Retail II):
 * hora: ciclo de 24 h derivado de tiempo_seg.
 * V1..V28: atributos de comportamiento anonimizados (PCA).
 
-4. "Productos más vendidos" -> rangos de monto
+4. Rangos de monto
 ---------------------------------------------
               operaciones  fraudes  tasa_fraude_por_mil  pct_del_fraude
 0 (cero)             1808       25                13.83             5.3

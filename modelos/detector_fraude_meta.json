@@ -1,7 +1,7 @@
 {
   "modelo": "Random forest",
   "version_sklearn": "1.9.1",
-  "entrenado": "2026-10-17T00:05:36",
+  "entrenado": "2026-10-17T08:27:34",
   "columnas_entrada": [
     "tiempo_seg",
     "V1",

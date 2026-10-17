@@ -14,7 +14,7 @@
       "Por el desbalance se recomienda evaluar con AUPRC, no con exactitud."
     ]
   },
-  "generado": "2026-10-16T23:58:27",
+  "generado": "2026-10-17T08:17:46",
   "archivo_crudo": {
     "ruta": "data\\creditcard.csv",
     "bytes": 150828752,
@@ -22,7 +22,7 @@
   },
   "base_datos": {
     "ruta": "data\\transacciones.db",
-    "bytes": 92925952,
+    "bytes": 96772096,
     "tablas": [
       "transacciones",
       "diccionario_datos",
