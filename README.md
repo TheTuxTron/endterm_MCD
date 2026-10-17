@@ -112,11 +112,10 @@ La narrativa completa está en `visualizaciones/historia_visualizaciones.txt`.
 
 # Modelado con scikit-learn
 
-|---|
-| Parte 0: Se agrega la tendencia temporal y la partición |
-| Parte 1: Transacción **Normal vs. Fraudulenta** |
-| Parte 2: Segmentar **transacciones** |
-| Parte 3: Predecir el fraude en **operaciones futuras**  |
+- **Parte 0:** Se agrega la tendencia temporal y la partición.
+- **Parte 1:** Clasificar transacciones **normales vs. fraudulentas**.
+- **Parte 2:** Segmentar **transacciones**.
+- **Parte 3:** Predecir el fraude en **operaciones futuras**.
 
 **Partición temporal:** se entrena con el 75 % más antiguo (212,794
 operaciones, 380 fraudes) y se prueba con el 25 % más reciente (70,932
